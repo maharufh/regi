@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action=""id="registerform">
+        <label for="">firstname</label>
+        <input type="text" name="" id="firstname" required="true"/>
+        <br/><br/>
+        <label for="">LastName</label>
+        <input type="text" name="" id="lastname" required="true"/>
+        <br/><br/>
+        <label for="">Email</label>
+        <input type="email" name="email" id="email" required="true"/>
+        <br/><br/>
+        <label for="">password</label>
+        <input
+         type="password"
+          name="password"
+           id="lastname" 
+           required="true"/>
+           <br/><br/>
+        <label for="">password</label>
+        <input
+         type="password"
+          name="password"
+           id="lastname" 
+           required="true"/>
+           <br/><br/>
+        <label for="">MobileNumber</label>
+        <input
+         type="number"
+          name="mobilenumber"
+           id="mobilenumber" 
+           required="true"/>
+           <br/><br/>
+        <label for="">Gender</label>
+        <select
+        
+          name=""
+           id="gender" >
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+           <br/><br/>
+           <label for="Address"></label>
+           <textarea name="" id="" cols="30" rows="10" required="true"></textarea>
+           <br/><br/>
+           <label for="">Country</label>
+           <input type="text" names="Country" required="true"/>
+           <label for="">DOB</label>
+           <input type="date" name = "dob"  required="true" />
+           <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+<script>
+     function submitForm () {
+var formdata = {
+  firstName: document. getElementById("firstName"). value,
+  LastName: document. getElementById( "lastName"). value, 
+  Email: document. getElementById( "email"). value,
+  Password: document. getAnimations ("password") . value,
+  MobileNumber: document. getElementById("mobileNumber"). value,
+  Gender: document. getElementById("gender"). value,
+ Country:document.getElementById("country").value,
+ DOB:document.getElementById("dob").value,
+};
+alert("The Form subission was successful" + JSON.stringify(formdata));
+</script>
+</body>
+</html>
